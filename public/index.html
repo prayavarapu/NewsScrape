@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>News Scrape</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>News Scraper</h1>
+      <h2><i>You can add a note or comment on any of the articles!</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+<style>
+    
+    body { background: rgb(135,224,253); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 47%, rgba(5,171,224,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 47%,rgba(5,171,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 47%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        margin-left: 20px;
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        margin-right: 20px;
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: white;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      h1, h2{
+        margin-left: 20px;
+        font-family: 'Quicksand', sans-serif;
+
+      }
+    </style>
+
+</html>
